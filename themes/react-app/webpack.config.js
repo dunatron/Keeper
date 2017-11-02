@@ -15,7 +15,7 @@ module.exports = (env = {}) => {
   const isProduction = env.production === true;
   const platform = env.platform; // 'default' by default
   const graphqlURIDEV = 'http://192.168.50.79/graphql';
-  const graphqlURIPROD = 'http://192.168.50.79/graphql';
+  const graphqlURIPROD = 'http://keeper.whatshapp.nz/graphql';
 
   return {
     watch: false,
