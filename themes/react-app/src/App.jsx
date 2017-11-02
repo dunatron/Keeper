@@ -3,6 +3,7 @@ import logo from './img/logo.svg';
 import './App.css';
 import WebpackLogo from './img/webpack.svg';
 import SSLogo from './img/silverstripe-logo.png';
+import GraphQLLogo from './img/GraphQL_Logo.svg.png';
 import CodeExampleList from './pages/CodeExampleList';
 import { withStyles } from 'material-ui/styles';
 
@@ -29,6 +30,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={SSLogo} className="ss-logo" alt="logo" />
+          <img src={GraphQLLogo} className="App-logo" alt="logo" />
           <img src={logo} className="App-logo" alt="logo" />
           <img src={WebpackLogo} className="App-logo" alt="logo" />
         </header>
