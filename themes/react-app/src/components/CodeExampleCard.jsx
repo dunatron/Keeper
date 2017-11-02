@@ -100,6 +100,8 @@ class CodeExampleCard extends Component {
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
+          closeTimeoutMS={200}
+          shouldCloseOnOverlayClick={true}
           contentLabel="Example Modal"
         >
 
