@@ -105,8 +105,10 @@ class CodeExampleCard extends Component {
           contentLabel="Example Modal"
         >
 
+          <Button dense color='primary' onClick={this.closeModal}>
+            CLOSE
+          </Button>
           <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
-          <button onClick={this.closeModal}>close</button>
           <div>I am a modal</div>
           <div>ToDo:</div>
           <div>1 ) create a store on CodeExampleList and move the Modal there.</div>
