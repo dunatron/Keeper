@@ -29,7 +29,7 @@ class CodeExampleList extends Component {
     const { classes, data: { loading, readCodeExamples } } = this.props;
 
     if (loading) {
-      return <CircularProgress className={classes.progress} />;
+      return <CircularProgress mode="indeterminate" className={classes.progress} />;
     }
 
     return readCodeExamples.edges.map(edge => {

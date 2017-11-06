@@ -35,7 +35,7 @@ class MenuList extends Component {
     const { classes, data: { loading, readPages } } = this.props;
 
     if (loading) {
-      return <CircularProgress className={classes.progress} />;
+      return <CircularProgress mode="indeterminate" className={classes.progress} />;
     }
 
     return readPages.edges.map(edge => {
@@ -48,6 +48,11 @@ export default compose(
   withStyles(styles),
   graphql(readPageItems)
 )(MenuList);
+
+/**
+ * ToDo
+ * http://www.material-ui.com/#/components/tabs
+ */
 
 /**
  fragment PagesOverview on Page {

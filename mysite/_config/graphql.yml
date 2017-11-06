@@ -14,7 +14,7 @@ SilverStripe\GraphQL\Controller:
     scaffolding:
       types:
         Page:
-          fields: [ID, URLSegment, Title, MenuTitle, Content, Sort]
+          fields: [ID, URLSegment, Title, MenuTitle, Content, Sort, ShowInMenus]
           operations:
             create: true
             read: true

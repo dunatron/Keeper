@@ -9,7 +9,9 @@ import ReactModal from 'react-modal';
 
 const styles = {
   menuItemClass: {
-    'border': '1px solid red',
+    'flex': '1 1 0', // flex-grow: 1; flex-shrink: 1; flex-basis: 0;
+    'text-align': 'center',
+    'padding': '0.7em'
   },
 
 };
@@ -25,21 +27,18 @@ class MenuItem extends Component {
 
 
   render() {
-    const {classes, menuItem: {ID, URLSegment, Title, MenuTitle, Content, Sort}} = this.props;
+    const {classes, menuitem: {ID, URLSegment, Title, MenuTitle, Content, Sort, ShowInMenus}} = this.props;
+    console.log('ShowMe' + ShowInMenus);
 
     return (
-      <MenuItem className={classes.menuItemClass}>
-        <li>
-          <a href={URLSegment}>
-            {ID}
-            {Title}
-            {MenuTitle}
-            {Content}
-            {Sort}
-          </a>
-        </li>
-      </MenuItem>
-    );
+     // <a href={URLSegment} className={classes.menuItemClass}>
+     //   {MenuTitle}
+     //   {ShowInMenus}
+     // </a>
+      <Button dense color='primary' href={URLSegment} className={classes.menuItemClass}>
+        {MenuTitle}
+      </Button>
+    )
   }
 
 }
@@ -53,6 +52,7 @@ fragment PagesOverview on Page {
   MenuTitle
   Content
   Sort
+  ShowInMenus
 }
   `
 };

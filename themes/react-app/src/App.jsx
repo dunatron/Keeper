@@ -21,6 +21,12 @@ const styles = {
     'flex-wrap': 'wrap',
     'flex-flow': 'row wrap',
     'align-content': 'flex-end'
+  },
+  menuHolder: {
+    'display': 'flex',
+    'align-items': 'center',
+    'border-top': '2px solid #000',
+    'border-bottom': '2px solid #000',
   }
 };
 
@@ -41,9 +47,9 @@ class App extends Component {
           Welcome to SS4 + REACT + WEBPACK <br />
           To get started, edit <code>src/App.js</code> and save to reload Hello.
         </p>
-        <div>
+        <nav className={classes.menuHolder}>
           <MenuList />
-        </div>
+        </nav>
         <div className={classes.cardHolder}>
           <CodeExampleList />
         </div>
