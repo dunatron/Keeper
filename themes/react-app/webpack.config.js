@@ -15,7 +15,7 @@ module.exports = (env = {}) => {
   // Variables set by npm scripts in package.json
   const isProduction = env.production === true;
   const platform = env.platform; // 'default' by default
-  const graphqlURIDEV = 'http://192.168.50.79/graphql';
+  const graphqlURIDEV = 'http://keeper.d/graphql';
   const graphqlURIPROD = 'http://keeper.whatshapp.nz/graphql';
 
   return {

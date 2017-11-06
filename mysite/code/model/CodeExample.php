@@ -10,7 +10,7 @@ class CodeExample extends DataObject
 
     private static $db = [
         'Title' => 'Text',
-        'Body'  =>  'Text'
+        'Body'  =>  'HTMLText'
     ];
 
     private static $has_one = [

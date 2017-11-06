@@ -7,6 +7,7 @@ import GraphQLLogo from './img/GraphQL_Logo.svg.png';
 import MenuList from './components/MenuList';
 import CodeExampleList from './pages/CodeExampleList';
 import { withStyles } from 'material-ui/styles';
+import TextExample from './components/TextFieldExampleControlled';
 
 
 const styles = {
@@ -50,6 +51,8 @@ class App extends Component {
         <nav className={classes.menuHolder}>
           <MenuList />
         </nav>
+        <TextExample value={'search'} />
+
         <div className={classes.cardHolder}>
           <CodeExampleList />
         </div>
@@ -57,6 +60,5 @@ class App extends Component {
     )
   }
 }
-
 // export default App;
 export default withStyles(styles)(App)

@@ -5,6 +5,7 @@ import {withStyles} from 'material-ui/styles';
 import Card, {CardActions, CardContent, CardMedia} from 'material-ui/Card';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
+import Paper from 'material-ui/Paper'
 import ReactModal from 'react-modal';
 
 const styles = {
@@ -38,6 +39,14 @@ const styles = {
     'display': 'flex',
     'align-items': 'center',
 
+  },
+  paper: {
+    'height': 'auto',
+    'width': 'auto',
+    'margin': '1.2em',
+    'padding': '1.2em',
+    'text-align': 'center',
+    'display': 'inline-block',
   }
 };
 
@@ -120,6 +129,9 @@ class CodeExampleCard extends Component {
             <button>stays</button>
             <button>inside</button>
             <button>the modal</button>
+
+            <Paper className={classes.paper} zDepth={1} children={<div>{Body}</div>} />
+
           </form>
         </ReactModal>
       </Card>
