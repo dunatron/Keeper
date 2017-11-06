@@ -4,6 +4,7 @@ import './App.css';
 import WebpackLogo from './img/webpack.svg';
 import SSLogo from './img/silverstripe-logo.png';
 import GraphQLLogo from './img/GraphQL_Logo.svg.png';
+import MenuList from './components/MenuList';
 import CodeExampleList from './pages/CodeExampleList';
 import { withStyles } from 'material-ui/styles';
 
@@ -40,6 +41,9 @@ class App extends Component {
           Welcome to SS4 + REACT + WEBPACK <br />
           To get started, edit <code>src/App.js</code> and save to reload Hello.
         </p>
+        <div>
+          <MenuList />
+        </div>
         <div className={classes.cardHolder}>
           <CodeExampleList />
         </div>

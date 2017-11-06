@@ -1,0 +1,302 @@
+{
+  "__schema": {
+    "types": [
+      {
+        "kind": "OBJECT",
+        "name": "Query",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "Int",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "readPagesConnection",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "PageInfo",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "readPagesEdge",
+        "possibleTypes": null
+      },
+      {
+        "kind": "UNION",
+        "name": "SiteTreeWithDescendants",
+        "possibleTypes": [
+          {
+            "name": "SiteTree"
+          },
+          {
+            "name": "Page"
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "SiteTree",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "ID",
+        "possibleTypes": null
+      },
+      {
+        "kind": "SCALAR",
+        "name": "String",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Page",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "readMembersConnection",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "readMembersEdge",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Member",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "CodeExamplesConnection",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "CodeExamplesEdge",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Code_Example",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Category",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "readCodeExamplesConnection",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "readCodeExamplesEdge",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "readCategoriesConnection",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "readCategoriesEdge",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "FileFilterInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "AppCategory",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ReadFilesSortInputType",
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "ReadFilesSortFieldType",
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "SortDirection",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "readFilesConnection",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "readFilesEdge",
+        "possibleTypes": null
+      },
+      {
+        "kind": "UNION",
+        "name": "Result",
+        "possibleTypes": [
+          {
+            "name": "File"
+          },
+          {
+            "name": "Folder"
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "File",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "FileInterface",
+        "possibleTypes": [
+          {
+            "name": "File"
+          },
+          {
+            "name": "Folder"
+          }
+        ]
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Folder",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ChildrenSortInputType",
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "ChildrenSortFieldType",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "ChildrenConnection",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "ChildrenEdge",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "Mutation",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "PageCreateInputType",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "MemberCreateInputType",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "CategoryCreateInputType",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "SiteTreeCreateInputType",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "FileInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "FolderInput",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__Schema",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__Type",
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "__TypeKind",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__Field",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__InputValue",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__EnumValue",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "__Directive",
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "__DirectiveLocation",
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "SilverStripe_Assets_Storage_DBFile",
+        "possibleTypes": null
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "DataObject",
+        "possibleTypes": []
+      },
+      {
+        "kind": "SCALAR",
+        "name": "Float",
+        "possibleTypes": null
+      }
+    ]
+  }
+}

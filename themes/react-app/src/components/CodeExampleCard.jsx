@@ -115,7 +115,7 @@ class CodeExampleCard extends Component {
           <div>2 ) CodeExampleList Will contain a currentData which will have data about one card</div>
           <div>3 ) On a card Button press send the data up to CodeExampleList</div>
           <form>
-            <input />
+            <input/>
             <button>tab navigation</button>
             <button>stays</button>
             <button>inside</button>

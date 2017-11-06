@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const WebpackShellPlugin = require('webpack-shell-plugin');
 
 const THEME_NAME = 'react-app'; // define SilverStripe theme name
 
@@ -36,6 +37,7 @@ module.exports = (env = {}) => {
       modules: ["node_modules"],
       extensions: ['.js', '.jsx'],
     },
+    devtool: "source-map",
 
     module: {
 
@@ -142,6 +144,14 @@ module.exports = (env = {}) => {
         GRAPHQLURIDEV:  JSON.stringify(graphqlURIDEV),
         GRAPHQLURIPROD:  JSON.stringify(graphqlURIPROD)
       }),
+
+      // Shell Plugin used to run scripts before or after build time
+      // Out of the box our app will generate the graphQL schema
+      // React need to know about our schema to perform union or interface types queries
+      // new WebpackShellPlugin({
+      //   onBuildStart: ['node ./src/buildGraphQLSchema.jsx'],
+      //   onBuildEnd: ['echo "goodbye world"']
+      // })
 
     ],
 

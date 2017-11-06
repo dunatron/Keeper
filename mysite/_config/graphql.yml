@@ -13,6 +13,11 @@ SilverStripe\GraphQL\Controller:
   schema:
     scaffolding:
       types:
+        Page:
+          fields: [ID, URLSegment, Title, MenuTitle, Content, Sort]
+          operations:
+            create: true
+            read: true
         SilverStripe\Security\Member:
           fields: [ID, Name, FirstName, Surname, Email]
           operations:

@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apollo-cache-inmemory": "^1.0.0",
+    "apollo-link-http": "^1.1.0",
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
     "babel-eslint": "7.2.3",
@@ -103,6 +105,7 @@
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.8.2"
+    "webpack-dev-server": "^2.8.2",
+    "webpack-shell-plugin": "^0.5.0"
   }
 }
