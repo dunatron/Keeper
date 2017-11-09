@@ -10,8 +10,15 @@ import introspectionQueryResultData from './fragments.json';
 //import { ApolloClient } from 'apollo-client';
 import { HttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
+// React router
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// Main menu
+import MainMenu from './components/MenuList';
 
-
+// Pages
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
 const fragmentMatcher = new IntrospectionFragmentMatcher({
   introspectionQueryResultData
@@ -42,7 +49,17 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <App />
+    <Router>
+      <div>
+        <MainMenu />
+        <Route exact path="/" component={HomePage} />
+        <Switch>
+          <Route exact path="/code-examples" component={AboutPage} />
+          <Route exact path="/contact-us" component={ContactPage} />
+          <Route exact path="/contact-us" component={ContactPage} />
+        </Switch>
+      </div>
+    </Router>
   </ApolloProvider>,
   document.getElementById('react-root')
 );

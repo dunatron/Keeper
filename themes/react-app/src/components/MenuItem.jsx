@@ -6,6 +6,9 @@ import Card, {CardActions, CardContent, CardMedia} from 'material-ui/Card';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
 import ReactModal from 'react-modal';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import HomePage from '../pages/HomePage';
+import CodeExamplePage from '../pages/CodeExamplePage';
 
 
 
@@ -34,13 +37,13 @@ class MenuItem extends Component {
     console.log('ShowMe' + ShowInMenus);
 
     return (
-     // <a href={URLSegment} className={classes.menuItemClass}>
-     //   {MenuTitle}
-     //   {ShowInMenus}
-     // </a>
-      <Button dense color='primary' href={URLSegment} className={classes.menuItemClass}>
-        {MenuTitle}
-      </Button>
+      <Link to={URLSegment}>
+        <Route exact path={URLSegment} component={HomePage} />
+        <Button dense color='primary' className={classes.menuItemClass}>
+          {MenuTitle}
+        </Button>
+      </Link>
+
     )
   }
 
