@@ -56,7 +56,6 @@ ReactDOM.render(
         <Switch>
           <Route exact path="/code-examples" component={AboutPage} />
           <Route exact path="/contact-us" component={ContactPage} />
-          <Route exact path="/contact-us" component={ContactPage} />
         </Switch>
       </div>
     </Router>

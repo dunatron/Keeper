@@ -33,14 +33,14 @@ class MenuItem extends Component {
 
 
   render() {
-    const {classes, menuitem: {ID, URLSegment, Title, MenuTitle, Content, Sort, ShowInMenus}} = this.props;
+    const {classes, menuitem: {ID, URLSegment, Title, MenuTitle, Content, Sort, ShowInMenus, ComponentType}} = this.props;
     console.log('ShowMe' + ShowInMenus);
 
     return (
       <Link to={URLSegment}>
-        <Route exact path={URLSegment} component={HomePage} />
         <Button dense color='primary' className={classes.menuItemClass}>
           {MenuTitle}
+          {ComponentType.Name}
         </Button>
       </Link>
 
@@ -59,6 +59,10 @@ fragment PagesOverview on Page {
   Content
   Sort
   ShowInMenus
+  ComponentType {
+    ID
+    Name
+  }
 }
   `
 };

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import logo from './img/logo.svg';
-import './App.css';
-import WebpackLogo from './img/webpack.svg';
-import SSLogo from './img/silverstripe-logo.png';
-import GraphQLLogo from './img/GraphQL_Logo.svg.png';
-import MenuList from './components/MenuList';
-import CodeExampleList from './pages/CodeExampleList';
+import logo from '../img/logo.svg';
+import '../App.css';
+import WebpackLogo from '../img/webpack.svg';
+import SSLogo from '../img/silverstripe-logo.png';
+import GraphQLLogo from '../img/GraphQL_Logo.svg.png';
+import CodeExampleList from '../pages/CodeExampleList';
 import { withStyles } from 'material-ui/styles';
-import TextExample from './components/TextFieldExampleControlled';
+import TextExample from '../components/TextFieldExampleControlled';
 
 
 const styles = {

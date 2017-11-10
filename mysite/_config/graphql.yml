@@ -14,7 +14,7 @@ SilverStripe\GraphQL\Controller:
     scaffolding:
       types:
         Page:
-          fields: [ID, URLSegment, Title, MenuTitle, Content, Sort, ShowInMenus]
+          fields: [ID, URLSegment, Title, MenuTitle, Content, Sort, ShowInMenus, ComponentType]
           operations:
             create: true
             read: true
@@ -31,6 +31,11 @@ SilverStripe\GraphQL\Controller:
             read: true
         MyOrg\Model\Category:
           fields: [ID, Name, BgColor]
+          operations:
+            create: true
+            read: true
+        MyOrg\Model\ComponentType:
+          fields: [ID, Name]
           operations:
             create: true
             read: true
