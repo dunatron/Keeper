@@ -36,14 +36,30 @@ class MenuItem extends Component {
     const {classes, menuitem: {ID, URLSegment, Title, MenuTitle, Content, Sort, ShowInMenus, ComponentType}} = this.props;
     console.log('ShowMe' + ShowInMenus);
 
-    return (
-      <Link to={URLSegment}>
-        <Button dense color='primary' className={classes.menuItemClass}>
-          {MenuTitle}
-          {ComponentType.Name}
-        </Button>
-      </Link>
+    let ParsedComponentType = CodeExamplePage;
 
+    if (ComponentType.Name === 'HomePage') {
+      ParsedComponentType = HomePage
+    }
+
+    console.log('ABout to get the Compoent Name from SS');
+    console.log(ComponentType.Name);
+    console.log('ParsedComponentType');
+    console.log(ParsedComponentType);
+    console.log('An actual Component');
+    console.log(CodeExamplePage);
+
+    return (
+      <div>
+        <Route exact path={`/`+URLSegment} component={CodeExamplePage} />
+        <Link to={URLSegment}>
+
+          <Button dense color='primary' className={classes.menuItemClass}>
+            {MenuTitle}
+            {ComponentType.Name}
+          </Button>
+        </Link>
+      </div>
     )
   }
 
