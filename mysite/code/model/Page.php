@@ -28,7 +28,7 @@ class Page extends SiteTree
         $componentType = CompositeField::create(
 
             DropdownField::create(
-                'ComponentType',
+                'ComponentTypeID',
                 'Choose A Component Type',
                 ComponentType::get()->map('ID', 'Name')->toArray(),
                 null,
