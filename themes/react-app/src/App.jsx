@@ -8,6 +8,15 @@ import MenuList from './components/MenuList';
 import CodeExampleList from './pages/CodeExampleList';
 import { withStyles } from 'material-ui/styles';
 import TextExample from './components/TextFieldExampleControlled';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+// Main menu
+import MainMenu from './components/MenuList';
+
+// Pages
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import CodeExamplePage from './pages/CodeExamplePage'
 
 
 const styles = {
@@ -31,31 +40,27 @@ const styles = {
   }
 };
 
+/**
+ * NOTE: It looks like all the routes want to go inside switch
+ */
 class App extends Component {
   render() {
 
     const { classes } = this.props;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={SSLogo} className="ss-logo" alt="logo" />
-          <img src={GraphQLLogo} className="App-logo" alt="logo" />
-          <img src={logo} className="App-logo" alt="logo" />
-          <img src={WebpackLogo} className="App-logo" alt="logo" />
-        </header>
+        <Route exact path="/" component={CodeExamplePage} />
+        <Route exact path="/home" component={CodeExamplePage} />
+        <Route exact path="/about-us" component={CodeExamplePage} />
+        <Route exact path="/contact-us" component={CodeExamplePage} />
+        <Route exact path="/page-not-found" component={CodeExamplePage} />
+        <Route exact path="/server-error" component={CodeExamplePage} />
+        <Route exact path="/debug-route" component={CodeExamplePage} />
+        <MainMenu />
+        <Switch>
 
-        <p className="App-intro">
-          Welcome to SS4 + REACT + WEBPACK <br />
-          To get started, edit <code>src/App.js</code> and save to reload Hello.
-        </p>
-        <nav className={classes.menuHolder}>
-          <MenuList />
-        </nav>
-        <TextExample value={'search'} />
 
-        <div className={classes.cardHolder}>
-          <CodeExampleList />
-        </div>
+        </Switch>
       </div>
     )
   }

@@ -51,9 +51,8 @@ class MenuItem extends Component {
 
     return (
       <div>
-        <Route exact path={`/`+URLSegment} component={CodeExamplePage} />
+        {/*<Route exact path={`/`+URLSegment} component={CodeExamplePage} />*/}
         <Link to={URLSegment}>
-
           <Button dense color='primary' className={classes.menuItemClass}>
             {MenuTitle}
             {ComponentType.Name}

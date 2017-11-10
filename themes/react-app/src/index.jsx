@@ -51,15 +51,7 @@ const client = new ApolloClient({
 ReactDOM.render(
   <ApolloProvider client={client}>
     <Router>
-      <div>
-        <Route exact path="/" component={HomePage} />
-        <MainMenu />
-        <Switch>
-          <Route exact path="/home" component={HomePage} />
-          <Route exact path="/contact-us" component={ContactPage} />
-          <Route exact path="/code-examples" component={CodeExamplePage} />
-        </Switch>
-      </div>
+      <App/>
     </Router>
   </ApolloProvider>,
   document.getElementById('react-root')
