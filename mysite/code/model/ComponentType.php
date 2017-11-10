@@ -11,7 +11,7 @@ class ComponentType extends DataObject
     ];
 
     private static $has_many = [
-        'Pages' => Page::class
+        'Pages' => 'Page'
     ];
 
     private static $default_sort = 'Created DESC';

@@ -16,7 +16,7 @@ class Page extends SiteTree
     ];
 
     private static $has_one = [
-        'ComponentType' => 'ComponentType'
+        'ComponentType' => ComponentType::class
     ];
 
     public function getCMSFields()
