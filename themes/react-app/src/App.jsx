@@ -50,12 +50,6 @@ class App extends Component {
     return (
       <div className="App">
         <Route exact path="/" component={CodeExamplePage} />
-        <Route exact path="/home" component={CodeExamplePage} />
-        <Route exact path="/about-us" component={CodeExamplePage} />
-        <Route exact path="/contact-us" component={CodeExamplePage} />
-        <Route exact path="/page-not-found" component={CodeExamplePage} />
-        <Route exact path="/server-error" component={CodeExamplePage} />
-        <Route exact path="/debug-route" component={CodeExamplePage} />
         <MainMenu />
         <Switch>
 

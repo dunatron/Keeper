@@ -102,6 +102,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-apollo": "^1.4.16",
+    "react-breakpoints": "^1.0.1",
     "react-dom": "^16.0.0",
     "react-froala-wysiwyg": "^2.7.1",
     "react-modal": "^3.1.0",
